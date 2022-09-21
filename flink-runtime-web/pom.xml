@@ -139,7 +139,7 @@ under the License.
 				</property>
 			</activation>
 			<properties>
-				<npm.proxy>--registry http://172.17.0.1:8888/repository/npm/</npm.proxy>
+				<npm.proxy>--registry https://mirrors.tencent.com/npm/</npm.proxy>
 			</properties>
 		</profile>
 	</profiles>
@@ -282,7 +282,7 @@ under the License.
 							<goal>npm</goal>
 						</goals>
 						<configuration>
-							<arguments>ci --cache-max=0 --no-save ${npm.proxy}</arguments>
+							<arguments>ci --cache-max=0 --no-save --registry https://mirrors.tencent.com/npm/</arguments>
 							<environmentVariables>
 								<HUSKY_SKIP_INSTALL>true</HUSKY_SKIP_INSTALL>
 							</environmentVariables>
